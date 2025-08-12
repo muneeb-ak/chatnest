@@ -30,7 +30,7 @@ export default function Home() {
       </section>
 
       {/* Why ChatNest */}
-      <section className="px-4 sm:px-6 py-16 bg-gradient-to-br from-gray-900 via-indigo-900 to-black">
+      <section className="px-4 sm:px-6 py-16 bg-gradient-to-br from-gray-900 to-indigo-900 ">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-12">Why ChatNest?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
@@ -63,7 +63,7 @@ export default function Home() {
       </section>
 
       {/* How it Works */}
-      <section  id="working" className="px-4 sm:px-6 py-20 bg-gradient-to-br from-gray-900 via-indigo-900 to-black border-t border-gray-800">
+      <section  id="working" className="px-4 sm:px-6 py-20 bg-gradient-to-br from-gray-900 to-indigo-900  border-t border-gray-800">
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <h2 className="text-3xl font-bold">How ChatNest Works</h2>
           <div className="relative border-l border-gray-700">

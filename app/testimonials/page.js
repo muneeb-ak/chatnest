@@ -207,7 +207,7 @@ export default function Testimonials() {
           cursor: grabbing;
         }
       `}</style>
-      <section className="bg-gradient-to-br from-indigo-900 to-black py-20 px-4 text-center">
+      <section className="bg-gradient-to-br from-gray-900 to-indigo-900 py-20 px-4 text-center">
         <h2 className="text-white  text-3xl sm:text-4xl font-bold mb-4">Start chatting with the world</h2>
         <p className="text-gray-200 mb-6 text-base sm:text-lg">
           No installation needed — just sign in and connect instantly.
