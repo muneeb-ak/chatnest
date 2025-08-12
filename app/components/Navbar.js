@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { UserButton } from "@clerk/nextjs";
@@ -8,12 +8,20 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-950 p-4 pr-12 pl-10">
+    <nav className="bg-gradient-to-br from-indigo-900 to-gray-950 p-4 pr-5 pl-3">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        {/* App Name on Left */}
-        <Link href="/" className="text-white text-xl font-bold">
-          ChatNest
-        </Link>
+        
+        {/* Logo + App Name */}
+        <div className="flex items-center space-x-2">
+          <img
+            className="h-10 w-10 rounded-full"
+            src="https://static.vecteezy.com/system/resources/thumbnails/010/557/928/small_2x/cn-creative-circle-letter-logo-concept-cn-letter-design-vector.jpg"
+            alt="ChatNest logo"
+          />
+          <Link href="/" className="text-white text-xl font-bold">
+            <span className="text-white">Chat</span>Nest
+          </Link>
+        </div>
 
         {/* Desktop Links */}
         <ul className="hidden sm:flex space-x-6 text-white font-medium gap-1 items-center">
@@ -23,7 +31,6 @@ const Navbar = () => {
           <li>
             <Link href="/nests">Nests</Link>
           </li>
-               
           <li>
             <Link href="/testimonials">Testimonials</Link>
           </li>
@@ -38,7 +45,6 @@ const Navbar = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          {/* Hamburger Icon */}
           <svg
             className="w-6 h-6"
             fill="none"
@@ -47,7 +53,6 @@ const Navbar = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             {menuOpen ? (
-              // X icon when open
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -55,7 +60,6 @@ const Navbar = () => {
                 d="M6 18L18 6M6 6l12 12"
               />
             ) : (
-              // Hamburger icon when closed
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -71,17 +75,13 @@ const Navbar = () => {
       {menuOpen && (
         <ul className="sm:hidden flex flex-col space-y-3 mt-4 text-white font-medium">
           <li>
-            <Link href="/" onClick={() => setMenuOpen(false)}>
-              Home
-            </Link>
+            <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
           </li>
           <li>
-            <Link href="/nests" onClick={() => setMenuOpen(false)}>
-              Nests
-            </Link>
+            <Link href="/nests" onClick={() => setMenuOpen(false)}>Nests</Link>
           </li>
           <li>
-            <Link href="/testimonials">Testimonials</Link>
+            <Link href="/testimonials" onClick={() => setMenuOpen(false)}>Testimonials</Link>
           </li>
           <li>
             <UserButton />
