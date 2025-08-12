@@ -73,7 +73,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="sm:hidden flex flex-col space-y-3 mt-4 text-white font-medium">
+        <ul className="sm:hidden flex flex-col space-y-3 mt-4 ml-3 text-white font-medium">
           <li>
             <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
           </li>
