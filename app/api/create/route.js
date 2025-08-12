@@ -107,3 +107,8 @@ for (const topic of topics) {
 //     return Response.json({message : "Done!"})
 // }
 }
+
+export const metadata = {
+  title: "Dicussion | ChatNest",
+  description: "Connect with the world.",
+};

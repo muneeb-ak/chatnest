@@ -122,3 +122,9 @@ const Page = () => {
 };
 
 export default Page;
+
+
+export const metadata = {
+  title: "Nests | ChatNest",
+  description: "Connect with the world.",
+};

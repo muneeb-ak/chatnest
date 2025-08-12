@@ -8,7 +8,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-br from-indigo-900 to-gray-950 p-4 pr-5 pl-3">
+    <nav className="bg-gradient-to-br from-indigo-900 to-gray-950 p-4 pr-5 pl-2">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         
         {/* Logo + App Name */}

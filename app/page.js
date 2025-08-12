@@ -2,6 +2,7 @@ import Testimonials from "./testimonials/page";
 
 export default function Home() {
   return (
+
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-indigo-900 to-black text-white">
       {/* Hero Section */}
 <section className="flex flex-col gap-2 items-center justify-center text-center px-4 py-30 space-y-6 min-h-[70vh] sm:min-h-[80vh]">
@@ -155,9 +156,10 @@ const TimelineStep = ({ emoji, number, title, description }) => (
       <p className="text-gray-400 text-sm">{description}</p>
     </div>
   </div>
+
 );
 
 export const metadata = {
-  title: "ChatNest",
+  title: "Home | ChatNest",
   description: "Connect with the world.",
 };
