@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
+import Image from "next/image";
 
 const testimonialsData = [
   {
@@ -108,10 +109,10 @@ export default function Testimonials() {
   };
 
 
-  
+
   return (
     <>
-      <section  id="tests"  className="bg-gradient-to-br from-gray-950 to-indigo-900 py-24  w-full">
+      <section id="tests" className="bg-gradient-to-br from-gray-950 to-indigo-900 py-24  w-full">
         <div className="max-w-7xl mx-auto relative">
           <h2 className="text-4xl font-extrabold mb-12 text-center text-white drop-shadow-lg">
             What Our Users Say
@@ -171,7 +172,7 @@ export default function Testimonials() {
                   className="snap-start flex-shrink-0 w-80 bg-gray-800 rounded-3xl p-6 shadow-lg hover:shadow-indigo-600/70 transition duration-300 cursor-default select-text flex flex-col"
                 >
                   <div className="flex items-center mb-4">
-                    <img
+                    <Image
                       src={image}
                       alt={`${name} avatar`}
                       className="w-14 h-14 rounded-full object-cover border-2 border-indigo-500"
@@ -180,8 +181,9 @@ export default function Testimonials() {
                     <p className="ml-4 font-semibold text-indigo-400 text-lg">{name}</p>
                   </div>
                   <p className="text-gray-300 italic leading-relaxed text-base flex-grow">
-                    "{message}"
+                    &quot;{message}&quot;
                   </p>
+
                 </div>
               ))}
             </div>
@@ -205,7 +207,7 @@ export default function Testimonials() {
           cursor: grabbing;
         }
       `}</style>
-            <section className="bg-gradient-to-br from-indigo-900 to-black py-20 px-4 text-center">
+      <section className="bg-gradient-to-br from-indigo-900 to-black py-20 px-4 text-center">
         <h2 className="text-white  text-3xl sm:text-4xl font-bold mb-4">Start chatting with the world</h2>
         <p className="text-gray-200 mb-6 text-base sm:text-lg">
           No installation needed — just sign in and connect instantly.
