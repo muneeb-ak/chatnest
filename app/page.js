@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-indigo-900 to-black text-white">
       {/* Hero Section */}
-<section className="flex flex-col gap-2 items-center justify-center text-center px-4 py-20 space-y-6 min-h-[60vh] sm:min-h-[80vh]">
+<section className="flex flex-col gap-2 items-center justify-center text-center px-4 py-30 space-y-6 min-h-[70vh] sm:min-h-[80vh]">
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-100 to-blue-200 text-transparent bg-clip-text drop-shadow-lg">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-white text-transparent bg-clip-text drop-shadow-lg">
           Welcome to ChatNest
         </h1>
 <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-xl mx-auto leading-relaxed">
