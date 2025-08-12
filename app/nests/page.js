@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import Image from 'next/image';
+
 
 const Page = () => {
   const topics = [
@@ -96,7 +96,7 @@ const Page = () => {
               key={topic.slug}
               className="bg-gray-800 rounded-xl shadow-md p-5 flex flex-col items-center text-center w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] min-h-[280px] hover:shadow-lg hover:shadow-purple-500/20 transition"
             >
-              <Image
+              <img
                 src={topic.img}
                 alt={topic.text}
                 className="w-16 h-16 mb-4 object-contain"

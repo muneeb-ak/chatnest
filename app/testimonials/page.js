@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import Image from "next/image";
+
 
 const testimonialsData = [
   {
@@ -172,7 +172,7 @@ export default function Testimonials() {
                   className="snap-start flex-shrink-0 w-80 bg-gray-800 rounded-3xl p-6 shadow-lg hover:shadow-indigo-600/70 transition duration-300 cursor-default select-text flex flex-col"
                 >
                   <div className="flex items-center mb-4">
-                    <Image
+                    <img
                       src={image}
                       alt={`${name} avatar`}
                       className="w-14 h-14 rounded-full object-cover border-2 border-indigo-500"
